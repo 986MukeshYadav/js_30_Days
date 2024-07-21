@@ -1,0 +1,22 @@
+Task 2: Select an HTML element by its class and change its background color.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myClass {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="myClass">
+        change my color
+    </div>
+    <script>
+        document.querySelector('.myClass').style.backgroundColor="red";
+    </script>
+</body>
+</html>

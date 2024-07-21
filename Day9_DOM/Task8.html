@@ -1,0 +1,24 @@
+Task 8: Add and remove a CSS class to/from an HTML element.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 8</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p id="myParagraph">This is a paragraph.</p>
+    <button id="toggleClassButton">Toggle Class</button>
+    <script>
+        const paragraph = document.getElementById('myParagraph');
+        const button = document.getElementById('toggleClassButton');
+        button.addEventListener('click', () => {
+            paragraph.classList.toggle('highlight');
+        });
+    </script>
+</body>
+</html>
