@@ -1,0 +1,22 @@
+<!-- Task 2: Add a double-click event listener to an image that toggles its visibility. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Event Handling</title>
+    <style>
+        #myimg.hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <img id="myimg" src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="myimg">
+    <script>
+        document.getElementById('myimg').addEventListener('dblclick',function (){
+            this.classList.toggle("hidden");
+        })
+    </script>
+</body>
+</html>

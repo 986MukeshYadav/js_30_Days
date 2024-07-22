@@ -1,0 +1,24 @@
+<!-- Task 8: Add a change event listener to a select dropdown that displays the selected value in a paragraph. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events</title>
+</head>
+<body>
+    <select id="mySelect">
+        <option value="1">One</option>
+        <option value="2">Two</option>  
+        <option value="3">Three</option>
+    </select>
+    <p id="selectedValue"></p>
+
+    <script>
+        document.getElementById("mySelect").addEventListener('change',function(){
+            document.getElementById("selectedValue").textContent=this.value;
+        });
+    </script>
+    
+</body>
+</html>
