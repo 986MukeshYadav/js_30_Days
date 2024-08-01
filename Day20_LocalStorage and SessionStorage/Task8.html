@@ -1,0 +1,26 @@
+<!-- Activity 4: Using SessionStorage
+ Task 8: Write a script to remove an item from sessionStorage. Log the sessionStorage content before and after removal. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 8 - SessionStorage</title>
+</head>
+<body>
+  <script>
+    // Add item to sessionStorage
+    sessionStorage.setItem('sessionItemToRemove', 'someValue');
+
+    // Log sessionStorage content
+    console.log('Before removal:', sessionStorage.getItem('sessionItemToRemove'));
+
+    // Remove item
+    sessionStorage.removeItem('sessionItemToRemove');
+
+    // Log sessionStorage content after removal
+    console.log('After removal:', sessionStorage.getItem('sessionItemToRemove')); // Output: null
+  </script>
+</body>
+</html>

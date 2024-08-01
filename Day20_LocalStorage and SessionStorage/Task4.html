@@ -1,0 +1,27 @@
+<!-- Activity 2: Using LocalStorage load.
+Task 4: Write a script to remove an item from localStorage. Log the localStorage content before and after removal. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4 - LocalStorage</title>
+</head>
+<body>
+    <script>
+        //Add item to localStorage
+        localStorage.setItem('itemRemove', 'someValue');
+
+        //log localStorage content
+        console.log('Before Removal:',localStorage.getItem('itemRemove'));
+
+        // //Remove item
+        localStorage.removeItem('itemRemove');
+        
+        //log localStorage content after removal
+        console.log('After Removal:', localStorage.getItem('itemRemove'));
+    </script>
+</body>
+</html>
